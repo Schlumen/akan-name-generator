@@ -7,7 +7,6 @@ body {
     font-family: 'Caudex', serif;
     background-image: linear-gradient(#846b50, #342a21);
     color: #ecc779;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -15,34 +14,32 @@ body {
 
 h1 {
     font-size: 2rem;
-    margin: 50px;
+    margin: 10px;
 }
 
 p {
-    margin: 50px;
+    margin: 10px;
     font-size: 1.2rem;
 }
 
 .content-wrapper {
-    background-image: linear-gradient(to right, #131212, #30312e);
+    background-image: linear-gradient(to right, #080808, #393a37);
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: 0;
+    margin: 20px;
     padding: 0;
     border-radius: 20px;
-    position: absolute;
-    top: 30px;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-    overflow: hidden;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .text-wrapper {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
 }
 
 .image-wrapper {
@@ -50,9 +47,9 @@ p {
 }
 
 img {
-    position: absolute;
-    height: 100%;
-    bottom: 0;
+    max-height: 800px;
+    width: 100%;
+    object-fit: contain;
 }
 
 a {
@@ -62,13 +59,18 @@ a {
     border: solid 2px #ecc779;
     border-radius: 10px;
     padding: 10px;
-    margin: 30px;
-    
+    margin: 20px;
+    display: inline-block;
 }
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 900px) {
     .content-wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
     }
+}
+
+.button-wrapper {
+    margin: 10px;
+    margin-top: 30px;
 }
