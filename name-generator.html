@@ -22,18 +22,28 @@
                 <input type="date" id="datepicker">
             </form>
             <form>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-                
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
+                <p>Gender</p>
+                <div class="radio-wrapper">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="radio-wrapper">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
             </form>
             <div class="button-wrapper">
                 <button class="name-button">Get Akan Name</button>
             </div>
-            <div class="name-output"></div>
+            <div class="name-output">
+            </div>
         </div>
     </div>
+    <script
+        src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous">
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

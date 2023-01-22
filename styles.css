@@ -1,6 +1,5 @@
 html {
     font-size: 100%;
-    height: 100%;
 }
     
 body {
@@ -8,7 +7,6 @@ body {
     background-image: linear-gradient(#846b50, #342a21);
     color: #cd9e36;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -124,5 +122,9 @@ input[type="radio"]:checked:before {
 }
 
 .name-output {
-    min-height: 200px;
+    min-height: 140px;
+}
+
+.radio-wrapper {
+    display: inline-block;
 }
