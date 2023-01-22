@@ -9,6 +9,31 @@
     <title>Explore Akan Names</title>
 </head>
 <body>
+    <div class="content-wrapper">
+        <div class="image-wrapper">
+            <img src="/img/child.png" alt="African Akan child">
+        </div>
+        <div class="text-wrapper">
+            <h1>Explore Akan Names</h1>
+            <p>Please input your gender and date of birth.</p>
+            <form>
+                <label for="datepicker">Date of birth</label>
+                <br><br>
+                <input type="date" id="datepicker">
+            </form>
+            <form>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </form>
+            <div class="button-wrapper">
+                <button class="name-button">Get Akan Name</button>
+            </div>
+            <div class="name-output"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
